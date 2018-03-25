@@ -1,10 +1,9 @@
 /*ALL CONTENT*/
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/*VISIBLE CONTENT*/
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -14,22 +13,30 @@ body {
   text-align: center;
 }
 
+h2, h3, h4, h5 {
+  padding: 10px;
+}
+
+p { /*Only used in locations*/
+  margin: 22px 0;
+}
+
 /*HEADER*/
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
   background-color: inherit;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav span {
+  padding: 0 10px;
   display: inline-block;
-  padding: 20px 10px;
 }
 
 a {
@@ -38,87 +45,79 @@ a {
 }
 
 .logo {
+height: 50px;
   margin-left: 10px;
-  height: 50px;
 }
 
 /*MAIN*/
-.content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+.main-content {
+  width: 1200px;
   padding-top: 70px;
 }
+
 /**MISSION SECTION**/
 #mission {
   height: 700px;
-  width: 1200px;
+  padding-top: 70px; /*match bottom of image with sample*/
   background-image: url(../images/img-mission-background.jpg);
   display: flex;
   align-items: center;
 }
 
-.section-title { /*also used in featured-tea section*/
+.section-content {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-color: black;
 }
 
 /**FEATURED-TEA SECTION**/
 #featured-tea {
   width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  padding: 70px 0;
+  margin: auto;
 }
 
-.tea-container {
-  display:flex;
+.container { /*also used in locations section*/
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .tea-box {
+  padding: 5px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
 }
 
-.tea-img {
+.tea-box img {
   height: 200px;
   width: 300px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 /**LOCATIONS SECTION**/
 #locations {
   height: 500px;
-  width: 1200px;
+  padding-top: 70px; /*match bottom of image with sample*/
   background-image: url(../images/img-locations-background.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.loc-box {
-  height: 300px;
+.location {
   width: 300px;
-  margin: 15px 20px;
+  margin: 5px 20px;
+  background-color: black;
+  opacity: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  opacity: 1;
-  background-color: black;
+}
+
+/*CONTACT SECTION*/
+#contact {
+  height: 200px;
 }
 
 /*FOOTER*/
 footer {
-  height: 200px;
-  width: 100%;
-}
-
-.copyright {
   margin-left: 20px;
   text-align: left;
 }

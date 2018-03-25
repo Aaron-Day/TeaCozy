@@ -69,13 +69,14 @@ a {
 /**FEATURED-TEA SECTION**/
 #featured-tea {
   width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .tea-container {
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -108,6 +109,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   opacity: 1;
+  background-color: black;
 }
 
 /*FOOTER*/
